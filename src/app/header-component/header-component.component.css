@@ -1,0 +1,13 @@
+.main_header{
+    background:#FAF9F6 !important;
+}
+
+.title{
+    color: #3c5c8d;
+}
+
+  .btn-primary {
+    background: linear-gradient(to right, #0044cc, #007bff);
+    border: none;
+    font-weight: bold;
+  }

@@ -1,0 +1,45 @@
+.carousel-overlay-wrapper {
+  position: relative;
+}
+
+.carousel-overlay-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 2;
+}
+
+.title{
+    color: #3c5c8d;
+}
+
+.informative{
+     background: rgba(0, 0, 0, 0.9);
+     margin-top:40px;
+     margin-bottom:40px;
+    
+}
+
+.box{
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background: #465597;
+    height:160px;
+    padding-top:12px;
+}
+
+
+
+
+/* ======================================================================================================== */
+
+
+
+

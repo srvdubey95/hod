@@ -1,0 +1,163 @@
+
+<div style="height: 40px;"></div>
+
+<div class="container mb-4 mt-4">
+
+<div class="card mt-4 shadow-lg border-0 rounded-4">
+  <div class="card-body p-4">
+
+    <h4 class="mb-3 text-primary">Create Your Account</h4>
+    <hr />
+
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">Informatics Unit <span class="text-danger">*</span></label>
+          <select id="informatics_unit" name="informatics_unit" formControlName="informatics_unit" class="form-select">
+            <option value="">Please Select</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Name <span class="text-danger">*</span></label>
+          <input type="text" id="name" name="name" formControlName="name" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Mobile No <span class="text-danger">*</span></label>
+          <input type="text" id="mobile" name="mobile" formControlName="mobile" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Email <span class="text-danger">*</span></label>
+          <input type="email" id="email_id" name="email" formControlName="email" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">NIC Internal Designation <span class="text-danger">*</span></label>
+          <select id="nic_designation" name="nic_designation" formControlName="nic_designation" class="form-select">
+            <option value="">Please Select</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Common Designation <span class="text-danger">*</span></label>
+          <select id="common_designation" name="common_designation" formControlName="common_designation" class="form-select">
+            <option value="">Please Select</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Functional Designation <span class="text-danger">*</span></label>
+          <select id="functional_designation" name="functional_designation" formControlName="functional_designation" class="form-select">
+            <option value="">Please Select</option>
+          </select>
+        </div>
+
+      
+        <div class="col-md-6">
+          <label class="form-label">Ministry <span class="text-danger">*</span></label>
+          <select id="ministry" name="ministry" class="form-select" formControlName="ministry">
+            <option value="">Please Select</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Department <span class="text-danger">*</span></label>
+          <select id="department" name="department" class="form-select" formControlName="department">
+            <option value="">Please Select</option>
+            <option value="0">None</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Role <span class="text-danger">*</span></label>
+          <select id="role" name="role" class="form-select" formControlName="role">
+            <option value="">Please Select</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Security Question <span class="text-danger">*</span></label>
+          <select id="sec_question" name="sec_question" formControlName="question" class="form-select">
+            <option value="">Please Select</option>
+            <option value="1">What is your favorite movie?</option>
+            <option value="2">In what city were you born?</option>
+            <option value="3">What was the name of your elementary school?</option>
+            <option value="4">What was your favorite food as a child?</option>
+            <option value="5">Which colour do you like most</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Answer <span class="text-danger">*</span></label>
+          <input type="text" id="sec_answer" name="answer" class="form-control" formControlName="answer" />
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Password <span class="text-danger">*</span></label>
+          <input type="password" id="reg_password" name="password" formControlName="password" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Upload Photo <span class="text-danger">*</span></label>
+          <input type="file" name="image" id="image" accept="image/*" class="form-control" formControlName="image"/>
+        </div>
+
+      
+        <div class="col-12 text-center mt-4">
+          <button type="submit" id="reg_submit" class="btn btn-primary px-5">Complete Registration</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="text-center mt-3">
+      <label>Already have an account? <a routerLink="/signin">Sign In</a></label>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer class="footer text-white pt-5 pb-3" style="background-color: #001f3f;">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-6 mb-3">
+                <img src="https://www.nic.in/wp-content/uploads/2021/02/nicLogoWhite.png" alt="NIC Logo" height="40"
+                    class="mb-2">
+                <p class="mb-1">National Informatics Centre</p>
+                <p class="mb-0">Government of India</p>
+            </div>
+            <div class="col-md-6 text-md-end mb-3">
+                <h6>FOLLOW US</h6>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-x-twitter fa-lg"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-8">
+                <ul class="list-inline mb-2">
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Need Help</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Feedback</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <p class="mb-1">Last Updated: 21 Mar 2025</p>
+                <p class="mb-0">Since 28 Oct 2024</p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center pt-3 border-top border-light">
+            <small>Copyright © 2025, Website maintained by National Informatics Center</small>
+            <img src="https://www.digilocker.gov.in/assets/img/logo.png" alt="Digital India" height="30">
+        </div>
+    </div>
+</footer>

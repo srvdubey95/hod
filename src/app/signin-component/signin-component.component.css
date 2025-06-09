@@ -1,0 +1,9 @@
+.color{
+    background: linear-gradient(135deg, #ffffff, #d4dfed);
+}
+
+  .btn-primary {
+    background: linear-gradient(to right, #0044cc, #007bff);
+    border: none;
+    font-weight: bold;
+  }

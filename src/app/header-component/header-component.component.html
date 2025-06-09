@@ -1,0 +1,45 @@
+<header class="fixed-top w-100 z-3">
+
+    <div class="py-3 main_header">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-auto">
+                    <a href="#">
+                        <img src="https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2024/10/20241009217618493.svg"
+                            alt="NIC Logo" height="50" loading="lazy">
+                    </a>
+                </div>
+
+                <!-- Title centered -->
+                <div class="col text-center">
+                    <h3 class="title">
+                        Project Asset Management & Monitoring System
+                    </h3>
+                </div>
+
+                <!-- Spacer or Right-side button (if needed) -->
+                <div class="col-auto d-none d-sm-block">
+
+                    <a *ngIf="isHomeRoute() " class="btn btn-primary" routerLink="/signin">Login/Signup</a>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <nav class="navbar" style="background:linear-gradient(to right, #0044cc, #007bff); height:36px;"
+        *ngIf="!isHomeRoute()">
+        <div class="container-fluid">
+            <a class="nav-link text-white" routerLink="/">Home</a>
+
+
+
+        </div>
+    </nav>
+</header>
+
+<div style="height: 80px;"></div>
